@@ -38,20 +38,24 @@ a:hover{
     cursor: pointer;
 }
 
-.info{
-	display: none;
-}
+
 .displaying p{
-	max-width: 50%;
+	/*max-width: 50%;
 	overflow: hidden;
 	border-width: 10px;
 	border-color: black;
 	padding:4px;
 	text-align: center;
-	display: block;
     margin-left: auto;
     margin-right: auto;
-    cursor: pointer;
+    cursor: pointer;¨*/
+  /*display: block;*/
+}
+.displaying{
+	display: block;
+}
+.hidden{
+	display: none;
 }
 
 footer img{
