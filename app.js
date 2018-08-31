@@ -1,9 +1,8 @@
-
-function openDiv(id){
-	if(document.getElementById(id+ "Info").className = "info"){
-	document.getElementById(id + "Info").style.display="block";
-	document.getElementById(id+"Info").className = "displaying";
-	}else{
-		document.getElementById.className = "info";
+function openDiv(id) {
+    var getI = document.getElementById(id+"Info");
+    if (getI.style.display === "block") {
+        getI.style.display = "none";
+    } else {
+        getI.style.display = "block";
+    }
 	}
-}
