@@ -40,7 +40,13 @@ a:hover{
 
 
 .displaying p{
-	/*max-width: 50%;
+	
+ 	
+}
+
+.hidden{
+	display: none;
+	max-width: 50%;
 	overflow: hidden;
 	border-width: 10px;
 	border-color: black;
@@ -48,14 +54,7 @@ a:hover{
 	text-align: center;
     margin-left: auto;
     margin-right: auto;
-    cursor: pointer;¨*/
-  /*display: block;*/
-}
-.displaying{
-	display: block;
-}
-.hidden{
-	display: none;
+    cursor: pointer;
 }
 
 footer img{
