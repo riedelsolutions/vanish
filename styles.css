@@ -1,0 +1,88 @@
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.logo, .buttons{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 20%;
+    padding: 20px;
+}
+	
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	color:#57edac;
+}
+
+#list{
+	margin-top:220px;
+}
+
+#list img{
+	-webkit-box-shadow: 12px 15px 40px -26px rgba(0,0,0,0.75);
+	-moz-box-shadow: 12px 15px 40px -26px rgba(0,0,0,0.75);
+	box-shadow: 12px 15px 40px -26px rgba(0,0,0,0.75);
+	margin-bottom:25px;
+	margin-top:2px;
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.info{
+	display: none;
+}
+.displaying p{
+	max-width: 50%;
+	overflow: hidden;
+	border-width: 10px;
+	border-color: black;
+	padding:4px;
+	text-align: center;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+footer img{
+	position: relative;
+	top: 7px;
+}
+
+footer{
+	text-align: center;
+	clear: both;
+}
+
+
+.thisNav{
+	overflow: hidden;
+  	background-color: #fff;
+ 	position: fixed;
+ 	top: 0;
+  	width: 100%;
+  }
+
+  @media only screen and (max-width: 1755px){
+	#list{
+		margin-top: 200px;
+	}
+  }
+
+   @media only screen and (max-width: 1024px){
+   	#list{
+   		margin-top: 130px;
+   	}
+   }
+
+
