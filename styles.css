@@ -23,6 +23,8 @@ a:hover{
 
 #list{
 	margin-top:220px;
+	display: flex; /*change*/
+	flex-wrap: wrap; /*change*/
 }
 
 #list img{
@@ -46,17 +48,69 @@ a:hover{
 
 .hidden{
 	display: none;
-	max-width: 50%;
-	overflow: hidden;
+	max-width: 20%;
+
 	border-width: 10px;
 	border-color: black;
 	padding:4px;
-	text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
+	text-align: left;
+  cursor: pointer;
+  background-color: white;
+    
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+
+  position:fixed;
+	top:50%;
+	left:30%;
+	max-width:900px; 
+	height:450px;
+	margin-left:-200px;   
+	margin-top:-200px;
+
+ overflow-y: scroll;
+
+ -webkit-box-shadow: 12px 15px 40px -26px rgba(0,0,0,0.75);
+  -moz-box-shadow: 12px 15px 40px -26px rgba(0,0,0,0.75);
+  box-shadow: 12px 15px 40px -26px rgba(0,0,0,0.75);
 }
 
+#prompts div{
+	  display: none;
+    max-width: 100%;
+    background-color: white;
+    color: black;
+    text-align: left;
+    
+    position: absolute;
+    z-index:2;
+  	margin-left: auto;
+    margin-right: auto;
+   	padding: 25px;
+   	cursor: initial;
+
+   	border-radius: 3px;
+     border-style: solid;
+    border-color: black;
+    border-width: 3px;
+   
+}
+
+#prompts p{
+  padding: 25px;
+}
+
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
 footer img{
 	position: relative;
 	top: 7px;
@@ -70,11 +124,16 @@ footer{
 
 .thisNav{
 	overflow: hidden;
-  	background-color: #fff;
+  background-color: #fff;
  	position: fixed;
  	top: 0;
-  	width: 100%;
+  width: 100%;
   }
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
 
   @media only screen and (max-width: 1755px){
 	#list{
@@ -87,5 +146,3 @@ footer{
    		margin-top: 130px;
    	}
    }
-
-
