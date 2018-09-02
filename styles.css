@@ -25,6 +25,7 @@ a:hover{
 	margin-top:220px;
 	display: flex; /*change*/
 	flex-wrap: wrap; /*change*/
+
 }
 
 #list img{
@@ -78,27 +79,39 @@ a:hover{
 
 #prompts div{
 	  display: none;
-    max-width: 100%;
+    width: 600px;
+    position: absolute;
+    margin:auto;
+    top: 10%;
+    left:40%;
+
     background-color: white;
     color: black;
     text-align: left;
     
-    position: absolute;
+    
     z-index:2;
-  	margin-left: auto;
-    margin-right: auto;
-   	padding: 25px;
+  	
+   	padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 4px;
    	cursor: initial;
 
-   	border-radius: 3px;
-     border-style: solid;
-    border-color: black;
-    border-width: 3px;
+   	border-radius: 10px;
+    border-style: solid;
+    border-color: #d1cfcf;
+    border-width: 1px;
    
 }
 
 #prompts p{
   padding: 25px;
+}
+
+.x{
+  color:#871402;
+  font-weight: bold;
 }
 
 
@@ -119,6 +132,7 @@ footer img{
 footer{
 	text-align: center;
 	clear: both;
+  font-weight: 600;
 }
 
 
@@ -128,6 +142,7 @@ footer{
  	position: fixed;
  	top: 0;
   width: 100%;
+  clear:both;
   }
 
 ::-webkit-scrollbar {
@@ -140,7 +155,13 @@ footer{
 		margin-top: 200px;
 	}
   }
+ @media only screen and (max-width: 1440px){
+    #prompts div{
+      left: 32%;
+    }
+  }
 
+ 
    @media only screen and (max-width: 1024px){
    	#list{
    		margin-top: 130px;
