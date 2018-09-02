@@ -64,12 +64,12 @@ a:hover{
   box-shadow: 12px 15px 40px -26px rgba(0,0,0,0.75);
 
   max-width: 600px;
-  height: 450px;
+  max-height: 450px;
   position: absolute; 
   left: 0; 
   right: 0; 
   margin-left: auto; 
-  margin-right: auto; /*if i move this again without noticing i'm killing myself*/
+  margin-right: auto;
 }
 
 #prompts div{
@@ -107,7 +107,9 @@ a:hover{
   text-align: right;
 }
 
-
+.instr{
+  max-width: 100%;
+}
 @-webkit-keyframes fadeIn {
     from {opacity: 0;} 
     to {opacity: 1;}
@@ -127,6 +129,7 @@ footer{
 	text-align: center;
 	clear: both;
   font-weight: 600;
+  padding: 15px;
 }
 
 footer a{
@@ -158,14 +161,6 @@ footer a{
    	#list{
    		margin-top: 130px;
    	}
-   }
-
-   @media only screen and (max-width: 659px){
-
-    .hidden{
-
-    }
-
    }
 
    #easteregg a{
