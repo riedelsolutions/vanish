@@ -132,6 +132,8 @@ footer{
   padding: 15px;
 }
 
+
+
 footer a{
   color:black;
 }
@@ -146,8 +148,16 @@ footer a{
   clear:both;
   }
 
-::-webkit-scrollbar {
+.hidden::-webkit-scrollbar {
     width: 8px;
+    background-color: #e0f9ee;
+    border-radius: 10px;
+}
+
+.hidden::-webkit-scrollbar-thumb {
+    background-color: #47ad87;
+    border-radius: 15px;
+
 }
  
 
@@ -169,4 +179,12 @@ footer a{
    }
    #limage{
       z-index: -1;
+   }
+
+   #f{
+      text-align: center;
+   }
+
+   #f a{
+    color: black;
    }
