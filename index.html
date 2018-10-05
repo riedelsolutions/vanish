@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126185350-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-126185350-3');
+</script>
+
 	<title>Vanish</title>
 	<meta charset="utf-8">
-	<meta description = "">
+	<meta description = "Vanish off the internet. Control your social media presence.">
 	<link rel = "stylesheet" href = "styles.css">
 	<meta name  = "viewport" content= "width =device-width, initial-scale =1.0">
 	<link rel = "shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -13,7 +23,7 @@
 	<script src  = "app.js"></script>
 	
 	<nav class = "thisNav">
-	<em id ='easteregg'><a href = "truevanish.html">???</a></em>
+	<em id ='easteregg'><a href = "truevanish">???</a></em>
 	<a href = "#"><img src = "images/logo.png" alt = "Vanish" class = "logo"></a>
 	</nav>
 	<div id = "prompts">
@@ -154,16 +164,33 @@
 		<strong>></strong> Choose 'Delete Google account and data'<br><br>
 		<strong>></strong> Read every disclaimer carefully and click 'Delete Account'<br><br></p><p onclick = "closePopup();" class = "x">X</p></div>
 	
-
-	<!--<div id = "wechatInfo" class = "hidden"><p>wechat</p><p onclick = "closePopup();" class = "x">X</p></div>-->
 	<div id = "vkInfo" class = "hidden"><p><strong>Delete your account:</strong><br><br>
 		<strong>></strong> When logged in, go to <a href = "https://vk.com/settings" target="_">settings</a>, scroll to the bottom and click on "You can delete your profile here."<br><br>
 		<strong>></strong> Select a reason and click 'delete my profile'.<br><br></p><p onclick = "closePopup();" class = "x">X</p></div>
-	<!--<div id = "gsuiteInfo" class = "hidden"><p>g suite</p><p onclick = "closePopup();" class = "x">X</p></div>-->
 	<div id = "otherInfo" class = "hidden"><p><strong>Tips:</strong><br><br>
 		<strong>></strong> Don't reveal your name or location in comments (pseudonyms are your friend!)<br><br>
 		<strong>></strong> If you're really concerned about your privacy, consider using a <a href = "https://en.wikipedia.org/wiki/Virtual_private_network" target="_blank">VPN</a>. Do some research beforehand!<br><br>
 		<strong>></strong> If you get too caught up on social media, come back every 3-6 months to do some cleaning up of your online presence. This will remind you you're in complete control of what you put out there.</p><p onclick = "closePopup();" class = "x">X</p></div>
+
+
+	<div id = "weChatInfo" class = "hidden">
+		<p>
+		<strong>Delete your account:</strong><br><br>
+		<strong>></strong> Make sure your WeChat app is updated<br><br>
+		<strong>></strong> Go to 'Me' > 'Settings' > 'Account security' > 'Wechat Security Center' > 'Account Cancellation'</p><p onclick = "closePopup();" class = "x">X</p>
+	</div>
+
+
+	<div id = "googleInfo" class = "hidden">
+		<p><strong>Delete your information off search results:</strong> <br><br>
+			<strong>></strong> If compromising/highly private information of yours is showing up in search results, visit this link <a href = "https://support.google.com/websearch/troubleshooter/3111061?hl=en" target="_blank">https://support.google.com/websearch/troubleshooter/3111061?hl=en</a>.<br><br>
+			<strong>></strong> Check the information you need to be deleted is part of the list.<br><br>
+			<strong>></strong> Answer the questions under <strong>'what do you want
+		to do?'</strong>. If the information in question is able to be removed from Google, you will be asked to fill out a form and
+		they will let you know how they will proceed with your case.
+		</p><br><br>
+		<p onclick = "closePopup();" class = "x">X</p>
+	</div>
 </div>
 	<div id = "list">
 		<img src = "images/facebook.png" height ="100px" onclick = "openDiv(this.id);" id = "facebook">
@@ -187,18 +214,17 @@
 		<img src = "images/pinterest.png" height ="100px" onclick = "openDiv(this.id);" id = "pinterest">
 
 		<img src = "images/email.png" height ="100px" onclick = "openDiv(this.id);" id = "emails">
-		
-		<!--<img src = "images/wechat.png" height ="100px" onclick = "openDiv(this.id);" id = "wechat">-->
 
 		<img src = "images/vk.png" height ="100px" onclick = "openDiv(this.id);" id = "vk">
 
-		<!--<img src = "images/gsuite.png" height ="100px" onclick = "openDiv(this.id);" id = "gsuite">-->
+		<img src = "images/wechat.png" height = "100px" onclick = "openDiv(this.id);" id = "weChat">
+
+		<img src = "images/google.png" height="100px" onclick = "openDiv(this.id);" id = "google">
 
 		<img src = "images/other.png" height ="100px" onclick = "openDiv(this.id);" id = "other">
+
 		
 	</div>
-
-
 
 	<div id ="tips"></div>
 	<footer><a href = "https://www.TheMComp.com" target="_blank">Made by 
